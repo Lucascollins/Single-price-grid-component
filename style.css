@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+:root{
+/* ### Primary */
+--Cyan: hsl(179, 62%, 43%);
+--Cyan_black: hsl(179, 87%, 41%);
+--Bright_Yellow: hsl(71, 73%, 54%);
+/* ### Neutral */
+--Light_Gray: hsl(204, 43%, 93%);
+--Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* stylling */
+    background-color: var(--Light_Gray);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+    height: 51vh;
+    background-color: var(--Cyan);
+    box-shadow: 0px 0px 25px -6px rgba(0,0,0,0.45);
+    border-radius: 10px;
+
+}
+
+header,article,footer{
+    padding: 40px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45%;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* stylling */
+    background-color: white;
+}
+
+header h1{
+    font-size: 1.5rem;
+    color: var(--Cyan_black);
+}
+
+header p{
+    font-size: 1rem;
+    color: var(--Bright_Yellow);
+    font-weight: 700;
+}
+
+header span{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Grayish_Blue);
+    opacity: 90%;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 55%;
+}
+
+section article{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: var(--Cyan);
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+section article h1{
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+
+section article p{
+    text-align: justify-all;
+    font-weight:500;
+    color: var(--Light_Gray);
+}
+
+section article p strong{
+    font-size: 1.8rem;
+    color: white;
+    opacity: 100%;
+    margin-right: 2px;
+}
+
+section article span{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+}
+
+section button{
+    width: 100%;
+    height: 30%;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--Bright_Yellow);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    box-shadow: 0px 11px 25px -6px rgba(0,0,0,0.45);
+    cursor: pointer;
+}
+
+
+section footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 50%;
+    height: 100%;
+    background-color: var(--Cyan_black);
+}
+
+section footer h1{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+section footer ul{
+    width: 100%;
+    height: 80%;
+}
+
+section footer li{
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: white;
+    opacity: 80%;
+}
+
+
+@media screen and (max-width:1500px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 38vw;
+        height: 80vh;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 35%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 65%;
+    }
+
+    header p{
+        font-size: 0.8rem;
+        color: var(--Bright_Yellow);
+        font-weight: 700;
+    }
+     
+    header p{
+        font-size: 0.8rem;
+    }
+
+    section footer{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        width: 100%;
+        height: 50%;
+    }
+
+    section article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;   
+    }
+}
+@media screen and (max-width:800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 95vh;
+        margin: 10px;
+    }
+    header h1{
+        font-size: 1.2rem;
+        color: var(--Cyan_black);
+    }
+    header span{
+        font-size: 0.8rem;
+    }
+    section article p strong{
+        font-size: 1.2rem;
+        color: white;
+        opacity: 100%;
+        margin-right: 2px;
+    }
+}
