@@ -214,6 +214,10 @@ section footer li{
         height: 95vh;
         margin: 10px;
     }
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
     header h1{
         font-size: 1.2rem;
         color: var(--Cyan_black);
@@ -226,5 +230,35 @@ section footer li{
         color: white;
         opacity: 100%;
         margin-right: 2px;
+    }
+}
+@media screen and (max-width:400px){
+    header h1{
+        font-size: 1rem;
+        color: var(--Cyan_black);
+    }
+    header p{
+        font-size: 0.7rem;
+    }
+    header span{
+        font-size: 0.6rem;
+    }
+    header,article,footer{
+        padding: 
+        25px;
+    }
+
+    section article h1{
+        font-size: 0.7rem;
+        color: white;
+    }
+    section article span{
+        font-size: 0.6rem;
+        color: white;
+    }
+    section footer li{
+
+        font-size: 0.6rem;
+        
     }
 }
